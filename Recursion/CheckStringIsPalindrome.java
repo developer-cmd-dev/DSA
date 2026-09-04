@@ -8,9 +8,6 @@ void main() {
 
     System.out.println(checkPalindrome(0,chars.length,chars));
 
-
-
-
 }
 
 
