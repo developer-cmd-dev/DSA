@@ -5,7 +5,7 @@ void main() {
 //printNumber(1,10);
 
     sumOfFirstNnumber(10,0);
-    System.out.println(sumOfNNumber(10,0));
+    System.out.println(sumOfNNumber(10));
 
 
 }
@@ -36,10 +36,9 @@ void sumOfFirstNnumber(int i,int sum){
 
 
 // using function return.
-int sumOfNNumber(int i,int sum){
-    if(i<1){
-        return  sum+i;
+int sumOfNNumber(int n){
+    if(n==0){
+        return  0;
     }
-    sum = sumOfNNumber(i-1,sum);
-    return  sum+i;
+    return  n + sumOfNNumber(n-1);
 }
