@@ -24,14 +24,11 @@ void main() {
 
 
 void reverseArrUsingRecursion(int i,int n,int[] arr){
-
     if(i>=n/2){
         return;
     }
     int swap = arr[i];
     arr[i]=arr[n-i-1];
     arr[n-i-1]=swap;
-
     reverseArrUsingRecursion(i+1,n,arr);
-
 }
