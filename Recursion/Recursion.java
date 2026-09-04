@@ -1,8 +1,17 @@
-class Recursion {
+void main() {
 
-    public static void main(String[] args) {
-        System.out.println("This is recursion");
+printNumber(1,10);
 
-    }
 
+
+}
+
+
+void printNumber (int i,int n){
+if(i>10){
+    return;
+}
+
+    System.out.println(i);
+    printNumber(i+1,n);
 }
