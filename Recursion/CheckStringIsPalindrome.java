@@ -1,12 +1,14 @@
 void main() {
 
-    String str = "Madam";
+    String str = "A man, a plan, a canal: Panama";
 
     str = str.toUpperCase();
+    str=str.replaceAll("[^a-zA-Z0-9]", "");
 
    char[] chars = str.toCharArray();
+    System.out.println(Arrays.toString(chars));
 
-    System.out.println(checkPalindrome(0,chars.length,chars));
+//    System.out.println(checkPalindrome(0,chars.length,chars));
 
 }
 
