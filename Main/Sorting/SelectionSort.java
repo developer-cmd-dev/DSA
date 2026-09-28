@@ -21,6 +21,8 @@ public class SelectionSort {
             int temp = arr[i];
             arr[i]=arr[min];
             arr[min]=temp;
+
+//            Time complexity will be O(n^2) with brute, best, better
         }
 
 
