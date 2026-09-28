@@ -18,9 +18,9 @@ public class SelectionSort {
                 if(arr[j]<arr[min]) min=j;
             }
 
-            int swap = arr[i];
+            int temp = arr[i];
             arr[i]=arr[min];
-            arr[min]=swap;
+            arr[min]=temp;
         }
 
 
